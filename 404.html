@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 • MCYIGIT.NET</title>
+    <meta name="robots" content="noindex">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0b0b0b;
+            --accent: #ffffff;
+            --muted: rgba(255, 255, 255, 0.7);
+            --glass: rgba(255, 255, 255, 0.04);
+            --glass-2: rgba(255, 255, 255, 0.02);
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, 'Helvetica Neue', Arial;
+            background: var(--bg);
+            color: var(--accent);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 48px;
+            align-items: center;
+            min-height: 60vh;
+        }
+
+        .subdomains {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            align-items: flex-end;
+            padding-right: 16px;
+        }
+
+        .subdomains a {
+            text-decoration: none;
+            color: var(--accent);
+            font-family: 'Oswald', 'Arial Black', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.6px;
+            display: block;
+            transform-origin: right center;
+            transition: transform .28s cubic-bezier(.2, .9, .3, 1), color .18s ease;
+            font-size: 44px;
+            opacity: 0.98;
+        }
+
+        .subdomains a:hover {
+            transform: translateX(-14px) scale(1.02);
+            color: #f1f1f1
+        }
+
+        .logo {
+            font-family: 'Oswald', Impact, sans-serif;
+            font-weight: 800;
+            font-size: 160px;
+            line-height: 0.86;
+            letter-spacing: 6px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: var(--muted);
+            margin-top: 14px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+        }
+
+        .card {
+            margin-top: 14px;
+            background: linear-gradient(180deg, var(--glass), var(--glass-2));
+            border-radius: 12px;
+            padding: 18px 20px;
+            max-width: 540px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .actions {
+            margin-top: 18px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 10px 14px;
+            border-radius: 8px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            transition: transform .15s ease, background .12s ease, border-color .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.02);
+            border-color: rgba(255, 255, 255, 0.18)
+        }
+
+        .big-row {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width:900px) {
+            .page {
+                grid-template-columns: 1fr;
+                gap: 26px;
+                padding: 8px
+            }
+
+            .subdomains {
+                flex-direction: row;
+                justify-content: center;
+                gap: 18px
+            }
+
+            .subdomains a {
+                font-size: 28px
+            }
+
+            .logo {
+                font-size: 84px;
+                text-align: center
+            }
+
+            .card {
+                max-width: none
+            }
+        }
+
+        @keyframes floaty {
+            from {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-6px)
+            }
+
+            to {
+                transform: translateY(0)
+            }
+        }
+
+        footer {
+            margin-top: 32px;
+            color: rgba(255, 255, 255, 0.12);
+            font-size: 12px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <main class="page" role="main">
+        <nav class="subdomains" aria-label="subdomain quick links">
+            <a href="https://play.mcyigit.net" title="play.mcyigit.net">play.</a>
+            <a href="https://app.mcyigit.net" title="app.mcyigit.net">app.</a>
+            <a href="https://ai.mcyigit.net" title="ai.mcyigit.net">ai.</a>
+        </nav>
+        <section class="content">
+            <div class="big-row">
+                <h1 class="logo">MCYİGİT.NET</h1>
+                <div style="min-width:260px;">
+                    <div class="tagline">404 — Sayfa bulunamadı</div>
+                    <div class="card">
+                        Görünüşe göre aradığınız sayfa kaybolmuş veya taşınmış.
+                        <div style="margin-top:10px;">Aşağıdaki bağlantılardan devam edebilirsiniz veya ana siteye dönün.</div>
+                        <div class="actions">
+                            <a class="btn" href="https://mcyigit.net">Ana Sayfa</a>
+                            <a class="btn" href="https://mcyigit.net/contact">İletişim</a>
+                            <a class="btn" href="https://mcyigit.net/sitemap.xml">Site Haritası</a>
+                        </div>
+                        <div style="margin-top:12px;color:rgba(255,255,255,0.6);font-size:13px">
+                            Hızlı ipucu: sol taraftaki "play.", "app.", "ai." bağlantıları direkt alt alanlara gider — belki aradığınız oradadır.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <footer>
+                © MCYİGİT.NET — Eğer bu hata sık çıkıyorsa bize bildirin.
+            </footer>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.subdomains a').forEach(a => {
+            a.addEventListener('click', () => {
+                a.style.transition = 'transform .3s ease, opacity .3s ease';
+                a.style.opacity = '0.85';
+                setTimeout(() => a.style.opacity = '', 350);
+            })
+        })
+    </script>
+</body>
+</html>
